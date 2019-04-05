@@ -4,6 +4,23 @@ public class Estudiante extends Persona{
 
     private Carrera carrera;
 
+    public Estudiante(){
+        
+    }
+    public Estudiante(int codigo){
+        super(codigo);
+    }
+    
+    public Estudiante(int codigo, String nombre, String cedula){
+        super(codigo, nombre, cedula);
+    }
+
+    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.carrera = carrera;
+    }
+        
+    
     @Override
     public String toString() {
         return "Estudiante{" + "carrera=" + carrera + '}';

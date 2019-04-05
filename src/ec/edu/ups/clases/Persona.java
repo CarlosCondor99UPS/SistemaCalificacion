@@ -10,6 +10,30 @@ public class Persona {
     private String correo;
     private Sede sede;
 
+    public Persona() {
+        
+    }
+
+    public Persona(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public Persona(int codigo, String nombre, String cedula) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+    }
+
+    public Persona(int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.correo = correo;
+        this.sede = sede;
+    }
+ 
     @Override
     public String toString() {
         return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", direccion=" + direccion + ", correo=" + correo + ", sede=" + sede + '}';
