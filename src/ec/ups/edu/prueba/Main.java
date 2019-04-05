@@ -5,12 +5,19 @@
  */
 package ec.ups.edu.prueba;
 
-import ec.edu.ups.clases.Profesor;
+import ec.edu.ups.clases.Estudiante;
+
 
 public class Main {
     
     public static void main(String[] args){
-        Profesor profesor=new Profesor();
+        Estudiante estudiante=new Estudiante();
+        estudiante.setNombre("Carlos Condor");
+        estudiante.setCedula("0107551012");
+        estudiante.setCodigo(1);
+        estudiante.setCorreo("tiansebas99@gmail.com");
+        estudiante.setDireccion("Pascalle 1-80");
+        estudiante.setTelefono("2834320");
         
     }
 }
