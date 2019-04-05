@@ -5,6 +5,12 @@
  */
 package ec.ups.edu.prueba;
 
+import ec.edu.ups.clases.Profesor;
+
 public class Main {
     
+    public static void main(String[] args){
+        Profesor profesor=new Profesor();
+        
+    }
 }
