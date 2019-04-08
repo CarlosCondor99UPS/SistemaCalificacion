@@ -13,8 +13,22 @@ public class Carrera {
     private String titulo;
 
     public Carrera(){
-    materias = new ArrayList<>();    
+        materias = new ArrayList<>();    
     }
+
+    public Carrera(int codigo, String nombre, int numeroSemestres, int numeroEstudiantes, String titulo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numeroSemestres = numeroSemestres;
+        this.numeroEstudiantes = numeroEstudiantes;
+        this.titulo = titulo;
+        materias = new ArrayList<>();  
+    }
+
+
+    
+    
+    
     @Override
     public String toString() {
         return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre + ", materias=" + materias + ", numeroSemestres=" + numeroSemestres + ", numeroEstudiantes=" + numeroEstudiantes + ", titulo=" + titulo + '}';

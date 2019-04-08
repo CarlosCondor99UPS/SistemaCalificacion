@@ -11,6 +11,16 @@ public class Sede {
     private String telefono;
     private List<Carrera> carreras;
 
+    public Sede(int codigo, String nombre, String direccion, String telefono) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        carreras = new ArrayList<>();
+    }
+
+    
+    
     public Sede() {
         carreras = new ArrayList<>();
     }

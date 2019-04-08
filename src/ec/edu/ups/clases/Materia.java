@@ -1,5 +1,8 @@
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Materia {
 
     private int codigo;
@@ -7,12 +10,30 @@ public class Materia {
     private int numeroCreditos;
     private int numeroHoras;
     private int nivel;
-    private Grupo grupo;
-    private Profesor profesor;
+    private List<Grupo> grupos;
+    private List<Profesor> profesores;
+
+    public Materia(int codigo, String nombre, int numeroCreditos, int numeroHoras, int nivel) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numeroCreditos = numeroCreditos;
+        this.numeroHoras = numeroHoras;
+        this.nivel = nivel;
+        grupos=new ArrayList();
+        profesores=new ArrayList();
+    }
+    
+    public void agregarGrupo(Grupo grupo){
+        this.grupos.add(grupo);
+    }
+    
+    public void agregarProfesor(Profesor profesor){
+        this.profesores.add(profesor);
+    }
 
     @Override
     public String toString() {
-        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", numeroCreditos=" + numeroCreditos + ", numeroHoras=" + numeroHoras + ", nivel=" + nivel + ", grupo=" + grupo + ", profesor=" + profesor + '}';
+        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", numeroCreditos=" + numeroCreditos + ", numeroHoras=" + numeroHoras + ", nivel=" + nivel + ", grupos=" + grupos + ", profesores=" + profesores + '}';
     }
 
     public int getCodigo() {
@@ -55,19 +76,22 @@ public class Materia {
         this.nivel = nivel;
     }
 
-    public Grupo getGrupo() {
-        return grupo;
+    public List<Grupo> getGrupo() {
+        return grupos;
     }
 
-    public void setGrupo(Grupo grupo) {
-        this.grupo = grupo;
+    public void setGrupo(List<Grupo> grupo) {
+        this.grupos = grupo;
     }
 
-    public Profesor getProfesor() {
-        return profesor;
+    public List<Profesor> getProfesor() {
+        return profesores;
     }
 
-    public void setProfesor(Profesor profesor) {
-        this.profesor = profesor;
+    public void setProfesor(List<Profesor> profesor) {
+        this.profesores = profesor;
     }
+
+    
+
 }
