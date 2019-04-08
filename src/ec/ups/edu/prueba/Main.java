@@ -72,18 +72,27 @@ public class Main {
         algebra.agregarGrupo(grupo1);
         algebra.agregarProfesor(profesor2);
         
+        estudiante1.setCarrera(mecatronica);
+        estudiante2.setCarrera(computacion);
+        
         System.out.println(sedeCuenca.toString());
         System.out.println(computacion.toString());
         System.out.println(telematica.toString());
         System.out.println(mecatronica.toString());
-        calculo.toString();
-        programacion.toString();
-        matematicas.toString();
-        etica.toString();
-        teoriaCritica.toString();
-        algebra.toString();
-        
-        
+        System.out.println(calculo.toString());
+        System.out.println(programacion.toString());
+        System.out.println(matematicas.toString());
+        System.out.println(etica.toString());
+        System.out.println(teoriaCritica.toString());
+        System.out.println(algebra.toString());
+        System.out.println(profesor1.toString());
+        System.out.println(profesor2.toString());
+        System.out.println(estudiante1.toString());
+        System.out.println(estudiante2.toString());
+        System.out.println(estudiante3.toString());
+        System.out.println(estudiante4.toString());
+        System.out.println(grupo1.toString());
+        System.out.println(grupo2.toString());
         
         //2 profesores 4 estudiantes 2 grupos
     }
